@@ -1,23 +1,11 @@
 ﻿Attribute,Data Type,Description,Primary Key,Mandatory,10 Character Alias
-building_pid,character string (15),Persistent identifier for the building.,Yes,Yes,BLD_PID
-date_created,date (dd-mm-yyyy),The date of record creation for the building.,No,Yes,DT_CREATE
-date_modified,date (dd-mm-yyyy),"The most recent date that an attribute (not including building_review_date, swimming_pool_review_date or solar_panel_review_date) has been modified for the building.",No,No,DT_MOD
-capture_date,date (dd-mm-yyyy),The capture date of the source imagery used to derive the original geometry of the building for the building pid.,No,No,CAPT_DATE
-building_review_date,date (dd-mm-yyyy),The most recent date of source imagery from which the building was reviewed for update or removal.,No,No,BLD_RV_DT
-building_source,character string (30),The methodology of capture for the building attributes.,No,Yes,BLD_SRC
-quality_class,character string (20),Represents whether the building has been classed as either ‘Urban’ or ‘Rural’.,No,Yes,QUAL_CLASS
-*locality_pid,character string (15),The locality the building is primarily within.,No,No,LOC_PID
-state,character string (3),The abbreviated name of the State or Territory that the building is primarily within.,No,No,STATE
 address_count,number (5),Total number of addresses related to a building.,No,Yes,ADD_COUNT
 swimming_pool_adjacent,character string (3),Indicates whether a swimming pool is on a property related to the building.,No,No,SP_ADJ
-swimming_pool_review_date,date (dd-mm-yyyy),The most recent review date for the swimming_pool_adjacent field.,No,No,SP_RV_DT
 solar_panel,character string (3),Describes whether a visible photovoltaic solar panel is identified for the building.,No,No,SOLAR_P
-solar_panel_review_date,date (dd-mm-yyyy),The most recent review date for the solar_panel field.,No,No,SOLP_RV_DT
 planning_zone,character string (30),The planning zone type assigned to a building through linkage with the Geoscape Planning.,No,No,PLAN_ZONE
 roof_height,"number (7,2)",The height of the building.,No,No,ROOF_HGT
 eave_height,"number (7,2)",The average height of the part of a buildings roof that meets or overhangs the walls (eave).,No,No,EAVE_HGT
 ground_elevation,"number (7,2)",The elevation of the ground at the centroid of the building.,No,No,GRD_ELEV
-ground_elevation_source,character string (4),The grid separated distance (GSD) of the source elevation model used to extract ground elevation.,No,No,GRD_EL_SRC
 primary_roof_material,character string (20),The material that the roof is primarily made from.,No,No,PR_RF_MAT
 roof_type,character string (30),Indicative shape of the roof of the building.,No,No,ROOF_TYPE
 roof_colour,character string (7),The measured Red/Green/Blue (RGB) colour value in hexadecimal format (#rrggbb) for the primary_roof_material of the building.,No,No,ROOF_CLR
@@ -25,7 +13,6 @@ roof_colour,character string (7),The measured Red/Green/Blue (RGB) colour value 
 number_vertices,number (5),The number of vertices for the building geometry.,No,Yes,NUM_VERT
 area,"number (10,2)",The area in square metres of the building geometry.,No,Yes,AREA
 volume,"number (10,2)",The volume of the polygon in cubic metres.,No,No,VOLUME
-geometry_quality,character string (30),Describes quality issues with the geometry of the building.,No,No,BLD_GM_QLT
 centroid_longitude,"number (9,6)",The longitude of the building centroid.,No,Yes,CNTRD_LONG
 centroid_latitude,"number (9,6)",The latitude of the building centroid.,No,Yes,CNTRD_LAT
 estimated_levels,number (3),The estimated number of levels for the building.,No,No,EST_LEV
